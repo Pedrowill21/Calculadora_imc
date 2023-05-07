@@ -1,3 +1,14 @@
+
+    function tentar(){
+            
+    document.getElementById('saida').style.background = "none";
+    document.getElementById('nome').style.display = "block";
+    document.getElementById('altura').style.display = "block";
+    document.getElementById('peso').style.display = "block";
+    document.getElementById('tentar-novamente').style.display = "none"
+    document.getElementById('btn').style.display = "block"
+    }
+
   function calcImc(){
     let nome = document.getElementById('nome').value;
     let altura = document.getElementById('altura').value;
@@ -47,9 +58,12 @@ if(imc <= 16){
  document.getElementById('nome').value = '';
  document.getElementById('altura').value = '';
  document.getElementById('peso').value = '';
- document.getElementById('nome').remove()
- document.getElementById('altura').remove()
- document.getElementById('peso').remove()
+ document.getElementById('nome').style.display = "none";
+ document.getElementById('altura').style.display = "none";
+ document.getElementById('peso').style.display = "none";
+ document.getElementById('tentar-novamente').style.display = "block";
+ document.getElementById('btn').style.display = "none"
+
 
 
 
