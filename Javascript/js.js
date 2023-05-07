@@ -41,12 +41,15 @@ if(imc <= 16){
     alerta = "red"
 }
 
-document.getElementById('saida').style.background = alerta;
-document.getElementById('saida').style.color = "white";
+ document.getElementById('saida').style.background = alerta;
+ document.getElementById('saida').style.color = "white";
  document.getElementById('saida').value = classificacao;
  document.getElementById('nome').value = '';
  document.getElementById('altura').value = '';
  document.getElementById('peso').value = '';
+ document.getElementById('nome').remove()
+ document.getElementById('altura').remove()
+ document.getElementById('peso').remove()
 
 
 
